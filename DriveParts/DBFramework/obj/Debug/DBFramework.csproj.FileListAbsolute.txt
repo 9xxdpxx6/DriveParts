@@ -1,0 +1,12 @@
+D:\Frolov\DriveParts\DriveParts\DriveParts\DBFramework\bin\Debug\DBFramework.dll
+D:\Frolov\DriveParts\DriveParts\DriveParts\DBFramework\bin\Debug\DBFramework.pdb
+D:\Frolov\DriveParts\DriveParts\DriveParts\DBFramework\obj\Debug\DBFramework.csproj.AssemblyReference.cache
+D:\Frolov\DriveParts\DriveParts\DriveParts\DBFramework\obj\Debug\DBFramework.csproj.CoreCompileInputs.cache
+D:\Frolov\DriveParts\DriveParts\DriveParts\DBFramework\obj\Debug\DBFramework.dll
+D:\Frolov\DriveParts\DriveParts\DriveParts\DBFramework\obj\Debug\DBFramework.pdb
+G:\Programs\C#\WPF\DriveParts\DriveParts\DBFramework\bin\Debug\DBFramework.dll
+G:\Programs\C#\WPF\DriveParts\DriveParts\DBFramework\bin\Debug\DBFramework.pdb
+G:\Programs\C#\WPF\DriveParts\DriveParts\DBFramework\obj\Debug\DBFramework.csproj.AssemblyReference.cache
+G:\Programs\C#\WPF\DriveParts\DriveParts\DBFramework\obj\Debug\DBFramework.csproj.CoreCompileInputs.cache
+G:\Programs\C#\WPF\DriveParts\DriveParts\DBFramework\obj\Debug\DBFramework.dll
+G:\Programs\C#\WPF\DriveParts\DriveParts\DBFramework\obj\Debug\DBFramework.pdb

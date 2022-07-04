@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d156a264f8624ac3ac39fb52f77d0960" Name="Diagram1" ZoomLevel="172">
+        <EntityTypeShape EntityType="DrivePartsModel.Brand" Width="1.5" PointX="0.75" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DrivePartsModel.Category" Width="1.5" PointX="0.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DrivePartsModel.Customer" Width="1.5" PointX="0.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DrivePartsModel.Delivery" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DrivePartsModel.Order" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DrivePartsModel.OrderStatus" Width="1.5" PointX="0.75" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DrivePartsModel.PaymentMethod" Width="1.5" PointX="0.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="DrivePartsModel.Product" Width="1.5" PointX="3.125" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="DrivePartsModel.ProductImage" Width="1.5" PointX="5.25" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DrivePartsModel.Provider" Width="1.5" PointX="3" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DrivePartsModel.Purchase" Width="1.5" PointX="5.25" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DrivePartsModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DrivePartsModel.User" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <AssociationConnector Association="DrivePartsModel.FK_Product_Brand" ManuallyRouted="false" />
+        <AssociationConnector Association="DrivePartsModel.FK_Product_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="DrivePartsModel.FK_Order_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="DrivePartsModel.FK_Order_Delivery" ManuallyRouted="false" />
+        <AssociationConnector Association="DrivePartsModel.FK_Order_OrderStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="DrivePartsModel.FK_Order_PaymentMethod" ManuallyRouted="false" />
+        <AssociationConnector Association="DrivePartsModel.FK_Purchase_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="DrivePartsModel.FK_ProductImage_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="DrivePartsModel.FK_Purchase_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="DrivePartsModel.FK_Purchase_Provider" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

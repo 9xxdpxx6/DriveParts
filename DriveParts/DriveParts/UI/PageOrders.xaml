@@ -1,0 +1,41 @@
+﻿<Page x:Class="DriveParts.UI.PageOrders"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DriveParts.UI"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Заказы" IsVisibleChanged="Page_IsVisibleChanged">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <ListView Grid.Row="1" Name="ListOrders" Background="Transparent" BorderThickness="0 0.3" BorderBrush="#909090" HorizontalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="False"/>
+
+        <Button Grid.Row="2" HorizontalAlignment="Right" Name="BtnAddOrder" Content="Добавить заказ" Click="BtnAddOrder_Click"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="0">
+            <ComboBox Width="150" Name="ComboStatus" ItemsSource="{Binding Status}" DisplayMemberPath="StatusName" Text="Статус" SelectionChanged="ComboStatus_SelectionChanged"/>
+            <DatePicker Name="DpFrom" Tag="Выбрать с" SelectedDateChanged="DpFrom_SelectedDateChanged"/>
+            <DatePicker Name="DpTo" Tag="Выбраь по" SelectedDateChanged="DpTo_SelectedDateChanged"/>
+            <Grid>
+                <TextBox Width="200" x:Name="TbSearch" TextChanged="TbSearch_TextChanged"/>
+                <TextBlock x:Name="TextPlaceholder" IsHitTestVisible="False" Text="Поиск" HorizontalAlignment="Left" Margin="24 0" Foreground="#303030">
+                    <TextBlock.Style>
+                        <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type TextBlock}}">
+                            <Setter Property="Visibility" Value="Hidden"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Text, ElementName=TbSearch}" Value="">
+                                    <Setter Property="Visibility" Value="Visible"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Page>
